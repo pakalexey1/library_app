@@ -1,5 +1,6 @@
 package com.cydeo.library.pages;
 
+import com.cydeo.library.utilities.Driver;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -10,8 +11,8 @@ import java.util.List;
 public abstract class BasePage {
     // No page elements added
 
-    public BasePage(WebDriver driver) {
-        PageFactory.initElements(driver, this);
+    public BasePage() {
+        PageFactory.initElements(Driver.getDriver(), this);
     }
 
     @FindBy(css = "a[href='#dashboard']")

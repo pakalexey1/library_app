@@ -49,6 +49,6 @@ public class Login_StepDefs {
     public void thereShouldBeUsers(int expectedNumberOfUsers) {
         String expectedUserNum = String.valueOf(expectedNumberOfUsers); // same as = expectedNumberOfUsers + "";
         wait.until(ExpectedConditions.urlContains("dashboard"));
-        Assert.assertEquals(landingPage.userCount.getText(), expectedNumberOfUsers);
+        Assert.assertEquals(landingPage.userCount.getText(), expectedUserNum);
     }
 }
