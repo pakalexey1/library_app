@@ -3,9 +3,9 @@ Feature: Login with parameters
   @libraryParam
   Scenario: Login as librarian 49
     Given I am on the login page
-    When I enter username "librarian22@library"
-    And I enter password "JUXl6dnx"
+    When I enter username "librarian49@library"
+    And I enter password "8l9bsLAN"
     And click the sign in button
-    And there should be 144 users
+    And there should be 171 users
     Then dashboard should be displayed
 #    number can be whatever is there
